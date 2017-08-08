@@ -1,0 +1,306 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+// Default colors
+$white: #fff;
+$black: #000000;
+
+// Variables
+
+// Fonts
+$base-font-stack: 'Lato', sans-serif !default;
+$base-font-size: 1.2em !default;
+$base-font-color: $black !default;
+$base-paragraph-font-size: 1.3em !default;
+
+// Headings
+$base-heading-color: $black !default;
+$base-h1-font-size : 2em !default;
+$base-h2-font-size : 1.5em !default;
+$base-h3-font-size : 1.17em !default;
+$base-h4-font-size : 1em !default;
+$base-h5-font-size : 0.83em !default;
+$base-h6-font-size : 0.7em !default;
+
+// Links
+$base-text-link-color: $black !default;
+$base-background-link-color: $black !default;
+$base-link-padding: 20px 10px !default;
+
+
+// Breakpoints
+
+//  ----------- Laptop ----------- //
+$laptop-min-width: 1200px;
+$laptop-max-width: 1600px;
+
+// Embedded Usage: @media screen and (min-device-width: $laptop-min-width) and (max-device-width: $laptop-max-width) { }
+// Retina: @media screen and (min-device-width: $laptop-min-width) and (max-device-width: $laptop-max-width) and (-webkit-min-device-pixel-ratio: 2)and (min-resolution: 192dpi) { }
+
+/* ----------- Phones ----------- */
+/* ----------- iPhone 4 and 4S ----------- */
+$iphone4-min-width: 320px;
+$iphone4-max-width: 480px;
+
+// Embedded Usage: @media only screen and (min-device-width: $iphone4-min-width) and (max-device-width: $iphone4-max-width) and (-webkit-min-device-pixel-ratio: 2) { }
+// Portait: @media only screen and (min-device-width: $iphone4-min-width) and (max-device-width: $iphone4-max-width) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { }
+// Landscape: @media only screen and (min-device-width: $iphone4-min-width) and (max-device-width: $iphone4-max-width) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { }
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+$iphone5-min-width: 320px;
+$iphone5-max-width: 568px;
+
+// Embedded Usage: @media only screen and (min-device-width: $iphone5-min-width) and (max-device-width: $iphone5-max-width) and (-webkit-min-device-pixel-ratio: 2) { }
+// Portait: @media only screen and (min-device-width: $iphone5-min-width) and (max-device-width: $iphone5-max-width) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { }
+// Landscape: @media only screen  and (min-device-width: $iphone5-min-width)  and (max-device-width: $iphone5-max-width) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { }
+
+/* ----------- iPhone 6 ----------- */
+$iphone6-min-width: 375px;
+$iphone6-max-width: 667px;
+
+// Embedded Usage: @media only screen  and (min-device-width: $iphone6-min-width) and (max-device-width: $iphone6-max-width) and (-webkit-min-device-pixel-ratio: 2) { }
+// Portait: @media only screen  and (min-device-width: $iphone6-min-width) and (max-device-width: $iphone6-max-width) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { }
+// Landscape: @media only screen  and (min-device-width: $iphone6-min-width) and (max-device-width: $iphone6-max-width) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { }
+
+
+/* ----------- iPhone 6+ ----------- */
+$iphone6-min-width: 414px;
+$iphone6-max-width: 736px;
+
+// Embedded Usage: @media only screen and (min-device-width: $iphone6-min-width) and (max-device-width: $iphone6-max-width) and (-webkit-min-device-pixel-ratio: 3) { }
+// Portait: @media only screen and (min-device-width: $iphone6-min-width) and (max-device-width: $iphone6-max-width) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { }
+// Landscape: @media only screen and (min-device-width: $iphone6-min-width) and (max-device-width: $iphone6-max-width) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) { }
+
+/* ----------- Galaxy S3 ----------- */
+$galaxy3-min-width: 320px;
+$galaxy3-max-width: 640px;
+
+// Embedded Usage: @media screen and (device-width: $galaxy3-min-width) and (device-height: $galaxy3-max-width) and (-webkit-device-pixel-ratio: 2) {}
+// Portait: @media screen and (device-width: $galaxy3-min-width) and (device-height: $galaxy3-max-width) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {}
+// Landscape: @media screen and (device-width: $galaxy3-min-width) and (device-height: $galaxy3-max-width) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) { }
+
+/* ----------- Galaxy S4----------- */
+$galaxy4-min-width: 320px;
+$galaxy4-max-width: 640px;
+
+// Embedded Usage: @media screen and (device-width: $galaxy4-min-width) and (device-height: $galaxy4-max-width) and (-webkit-device-pixel-ratio: 3) {}
+// Portait: @media screen and (device-width: $galaxy4-min-width) and (device-height: $galaxy4-max-width) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+// Landscape: @media screen and (device-width: $galaxy4-min-width) and (device-height: $galaxy4-max-width) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) { }
+
+/* ----------- Galaxy S5----------- */
+$galaxy5-min-width: 360px;
+$galaxy5-max-width: 640px;
+
+// Embedded Usage: @media screen and (device-width: $galaxy5-min-width) and (device-height: $galaxy5-max-width) and (-webkit-device-pixel-ratio: 3) {}
+// Portait: @media screen and (device-width: $galaxy5-min-width) and (device-height: $galaxy5-max-width) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+// Landscape: @media screen and (device-width: $galaxy5-min-width) and (device-height: $galaxy5-max-width) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) { }
+
+
+/* ----------- Tablets ----------- */
+/* ----------- iPad mini, 1 and 2 ----------- */
+
+$ipad-old-min-width: 768px;
+$ipad-old-max-width: 1024px;
+
+// Embedded Usage: @media only screen and (min-device-width: $ipad-old-min-width) and (max-device-width: $ipad-old-max-width) and (-webkit-min-device-pixel-ratio: 1) {}
+// Portait: @media only screen and (min-device-width: $ipad-old-min-width) and (max-device-width: $ipad-old-max-width) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
+// Landscape: @media only screen and (min-device-width: $ipad-old-min-width) and (max-device-width: $ipad-old-max-width) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/* ----------- iPad 3 and 4 ----------- */
+
+$ipad-min-width: 768px;
+$ipad-max-width: 1024px;
+
+// Embedded Usage: @media only screen and (min-device-width: $ipad-min-width) and (max-device-width: $ipad-max-width) and (-webkit-min-device-pixel-ratio: 2) {}
+// Portait: @media only screen and (min-device-width: $ipad-min-width) and (max-device-width: $ipad-max-width) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+// Landscape: @media only screen and (min-device-width: $ipad-min-width) and (max-device-width: $ipad-max-width) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/********************************************
+                   Mixin's
+*********************************************/
+
+
+// Default Mixin
+@mixin link-style(
+	$padding:$base-link-padding,
+	$background-color:$base-background-link-color,
+	$text-color:$base-text-link-color
+	)
+{
+	padding: $padding !important;
+	background-color:$background-color !important;
+	color: $text-color !important;
+}
+
+@mixin link-transition($time:0.5s){ 
+	-webkit-transition: all linear $time; 
+	-o-transition: all linear $time;
+	transition: all linear $time;
+};
+
+
+// Helper Mixin
+@mixin large-margin-spacer() {
+	margin: 40px 0;
+}
+
+@mixin small-margin-spacer() {
+	margin: 20px 0;
+}
+
+@mixin large-padding-spacer() {
+	padding: 1% 0 3% 0;
+}
+
+@mixin small-padding-spacer() {
+	padding: 20px 0;
+}
+
+@mixin hide () {
+	display: none;
+}
+
+//  Background Images
+@mixin background-image($filename) {
+	background: url($filename) no-repeat center center;
+	background-size: cover;
+}
+
+
+/********************************************
+                   Base
+*********************************************/
+
+body {
+
+	font: $base-font-stack;
+	font-size: $base-font-size;
+	color: $base-font-color;
+}
+h1 {color: $base-heading-color;
+	font-size: $base-h1-font-size;
+}
+h2 {
+	color: $base-heading-color;
+	font-size: $base-h2-font-size;
+}
+h3 {
+	color: $base-heading-color;
+	font-size: $base-h3-font-size;
+}
+h4 {
+	color: $base-heading-color;
+	font-size: $base-h4-font-size;
+}
+h5 {
+	color: $base-heading-color;
+	font-size: $base-h5-font-size;
+}
+h6 {
+	color: $base-heading-color;
+	font-size: $base-h6-font-size;
+}
+p {
+	color: $base-heading-color;
+	font-size: $base-paragraph-font-size;}
+
+
+a {
+
+	@include link-style(10px 20px);
+	@include link-transition(0.3s);
+	
+	&:hover {
+		@include link-style(#000);
+		@include link-transition(0.6s);
+	}
+}
+
+
+/********************************************
+                   Overrides
+*********************************************/
+
+
+// Override Variables.
+$base-font-stack: 'Lato', sans-serif;
+$base-font-size: 1.2em;
+$base-font-color: #616161;
+$base-paragraph-font-size: 1.1em;
+
+// Colors
+$color-dark-grey: #222;
+$color-light-grey: lighten($color-dark-grey,5%);
+$blue: #0c1b5b;
+
+
+// Headings (Headings up till H6 availble)
+$base-heading-color: #1c1c1c;
+$base-h1-font-size : 2em;
+$base-h2-font-size : 3em;
+$base-h3-font-size : 2.5em;
+
+// Links
+$base-text-link-color: $white;
+$base-background-link-color: $color-dark-grey;
+$base-link-padding: 20px 10px;
+// Custom styles
+
+h2 {
+   @include large-padding-spacer();
+   margin: 0px;
+}
+h3 {
+    padding: 0px;
+
+}
+p 
+{
+    border-top: 0px solid #eee; 
+    @include small-padding-spacer();
+}
+a {
+border-radius: 15px;font-weight: 700;
+}
+a:hover{
+text-decoration: none !important;
+}
+
+
+
+
+section:nth-child(odd){
+    background: $color-light-grey;
+    color: $white;
+    h1 {color: $white; }
+    h2 {color: $white;}
+    h3 {color: $white;}
+    p { color: $white; }
+    .panel-body { color: $black}
+    a {background-color: $white !important; color:$black !important; }
+    a:hover {background-color: $color-dark-grey !important; color:$white !important; }
+    
+}
+
+section {
+    padding: 30px 0;
+    .tabs{
+        &.active {
+            display: block;
+        }
+        display: none;
+}
+}
+
+
+
+footer{
+    color: $white;
+    background: $color-light-grey;
+    @include small-padding-spacer();
+}
+
+
+

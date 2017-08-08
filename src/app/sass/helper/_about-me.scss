@@ -1,0 +1,67 @@
+body {
+    &#about-me-page {
+    header .navbar-nav>li.active>a {
+    border-bottom: 2px solid #fff;
+    border-radius: 0!important;
+    padding: 10px 3px!important;
+    margin: 0 20px;
+    width: 55% !important;
+}
+    }
+}
+
+section {
+
+    &#about-me-summary {
+        .wrapper {
+           padding-top: 4%;
+        }
+        div {
+            .list-group {
+                padding: 20px 0px;
+                .list-group-item-heading {
+                 font-size: 1.2em;
+                }
+                .list-group-item-text {
+                    padding: 10px 0 20px 0;
+                    color: $color-light-grey;
+                    font-weight: 700;
+                //  @include small-margin-spacer();
+                }
+            }
+        }
+        
+        
+    }
+
+    &#about-me-content {
+        p {
+            &.tabs {
+                padding: 0px;
+            }
+        }
+        .panel-body {
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+&#youtubeChannels {
+    h3 {
+        font-size: 1.6em;
+        @include small-padding-spacer();
+    }
+}
+
+&.profile-links {
+    a {
+        padding: 0 !important;
+        background-color: transparent !important;
+        color: red !important;
+    }
+    .fa {
+        font-size: 2em;
+    }
+}
+
+}
