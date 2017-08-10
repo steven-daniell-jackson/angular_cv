@@ -19,10 +19,11 @@ import { HomepagePortfolioComponent } from './templates/homepage/components/home
 import { ContactMeComponent } from './shared/contact-me/contact-me.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { AboutComponent } from './templates/about/about.component';
  
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
-   {path : 'footer',component: FooterComponent},
+   {path : 'about',component: AboutComponent},
   { path: 'home', component: HomepageComponent },
   { path: 'xp', component: ExperienceComponent }
 ];

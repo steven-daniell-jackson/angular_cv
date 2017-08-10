@@ -25,6 +25,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HompageCarouselComponent } from './templates/hompage-carousel/hompage-carousel.component';
+import { AboutComponent } from './templates/about/about.component';
+
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import { HompageCarouselComponent } from './templates/hompage-carousel/hompage-c
     FooterComponent,
     NavbarComponent,
     NavMenuComponent,
+    AboutComponent,
     HompageCarouselComponent
   ],
   imports: [
